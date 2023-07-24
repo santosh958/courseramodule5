@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Chu's China Bistro</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <style>
+    /* Additional styles */
+    header {
+      background-color: #FFD700; /* Yellow background color for header */
+    }
+
+    #nav-list li {
+      position: relative;
+      animation: moveInLeft 1s ease;
+    }
+
+    @keyframes moveInLeft {
+      0% {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    #testimonials {
+      background-color: #f9f9f9;
+      padding: 10px;
+    }
+
+    #phone span {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    #xs-deliver {
+      background-color: #FFD700; /* Yellow background color for delivery section */
+      font-size: 1.2em;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    /* Adjust the size of menu, about, and awards icons */
+    .menu-icon, .about-icon, .awards-icon {
+      width: 60px;
+      height: 60px;
+      margin-left: 15px;
+    }
+
+    /* Style for the navbar header */
+    .navbar-header {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Style for the navbar brand */
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+    }
+
+    /* Style for the logo image */
+    #logo-img {
+      width: 50px; /* Adjust the width as needed */
+      height: auto;
+      margin-right: 10px;
+    }
+
+    /* Background color for the middle section */
+    #main-content {
+      background-color: #8B0000; /* Dark Red background color for middle section */
+      padding: 30px;
+    }
+
+    /* Background color for the footer */
+    footer.panel-footer {
+      background-color: #FFD700; /* Yellow background color for footer */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- Logo -->
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <img src="C:\Users\Santosh\Downloads\WhatsApp Image 2023-07-23 at 3.46.50 PM.jpeg" alt="Logo image" id="logo-img">
+          </a>
+
+          <!-- Navbar Brand -->
+          <div class="navbar-brand">
+            <a href="index.html">
+              <h1>David Chu's China Bistro</h1>
+            </a>
+
+            <p>
+              <br>
+              <img src="C:\Users\Santosh\Downloads\WhatsApp Image 2023-07-23 at 4.13.11 PM.jpeg" alt="Kosher certification">
+              <span>Kosher Certified</span>
+            </br>
+            </p>
+          </div>
+        </div>
+
+        <!-- Navbar Menu -->
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li id="navMenuButton">
+              <a href="#" onclick="$dc.loadMenuCategories();">
+                <span class="glyphicon glyphicon-cutlery menu-icon"></span><br class="hidden-xs"> Menu
+                <img src="C:\Users\Santosh\Downloads\WhatsApp Image 2023-07-23 at 4.06.14 PM.jpeg" alt="Menu Spoon" class="menu-icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign about-icon"></span><br class="hidden-xs"> About
+                <img src="C:\Users\Santosh\Downloads\WhatsApp Image 2023-07-23 at 4.06.15 PM (2).jpeg" alt="About Icon" class="about-icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate awards-icon"></span><br class="hidden-xs"> Awards
+                <img src="C:\Users\Santosh\Downloads\WhatsApp Image 2023-07-23 at 4.06.15 PM.jpeg" alt="Awards Icon" class="awards-icon">
+              </a>
+              </a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:410-602-5008">
+                <span>410-602-5008</span></a>
+              <div>* We Deliver</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <!-- The call button section remains the same as before -->
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+
+  <div id="main-content" class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="C:\Users\Santosh\Downloads\WhatsApp Image 2023-07-23 at 3.46.49 PM.jpeg" alt="Photo 1">
+        <p>Caption for Photo 1</p>
+      </div>
+      <div class="col-md-6">
+        <img src="C:\Users\Santosh\Downloads\WhatsApp Image 2023-07-23 at 3.46.48 PM.jpeg" alt="Photo 2">
+        <p>Caption for Photo 2</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Saturday Closed
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          7105 Reisterstown Road<br>
+          Baltimore, MD 21215
+          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on
